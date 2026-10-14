@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 200" width="560" height="200">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#ff2e88"/>
+      <stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="544" height="184" rx="40" fill="none" stroke="url(#g)" stroke-width="10"/>
+  <g fill="#ffffff" font-family="Arial Black, sans-serif" text-anchor="middle">
+    <text x="280" y="110" font-size="84" letter-spacing="4">OFFBEAT</text>
+    <text x="280" y="160" font-size="38" letter-spacing="18" fill="url(#g)">GAMES</text>
+  </g>
+</svg>

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Offbeat Games</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#0b0720" />
+    <link rel="icon" href="./icons/icon-192.png" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <script type="module" crossorigin src="./assets/index-BGigC8VS.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CYllomGS.css">
+  </head>
+  <body>
+    <div id="stage">
+      <canvas id="game"></canvas>
+      <div id="game-layer"></div>
+
+      <!-- 1. Welcome -->
+      <section id="screen-attract" class="screen">
+        <img class="logo" alt="" />
+        <h1 class="title"></h1>
+        <p class="tagline"></p>
+        <div class="mascot-wrap"><img class="mascot dance" alt="" /></div>
+        <div class="cta">
+          <p class="cta-text"></p>
+          <div class="proximity"><div class="proximity-fill"></div></div>
+          <p class="proximity-label"></p>
+        </div>
+        <p class="footer"></p>
+        <p class="privacy"></p>
+        <p class="offline-note hidden"></p>
+        <div id="demo-switcher" class="hidden"></div>
+      </section>
+
+      <!-- Kiosk link outside its active period (or turned off) -->
+      <section id="screen-closed" class="screen">
+        <img class="logo" alt="" />
+        <h1 class="title"></h1>
+        <p class="closed-line"></p>
+      </section>
+
+      <!-- Sign-up before the first play (kiosk links whose activation has a form) -->
+      <section id="screen-register" class="screen"></section>
+
+      <!-- Branded photo after the game (kiosk links whose activation offers it) -->
+      <section id="screen-photo" class="screen"></section>
+
+      <!-- 2. Start gesture (content comes from the game) -->
+      <section id="screen-ready" class="screen">
+        <h2 class="hud-heading"></h2>
+        <div class="ready-body"></div>
+      </section>
+
+      <!-- 3. Countdown -->
+      <section id="screen-countdown" class="screen">
+        <div class="count"></div>
+        <p class="count-hint"></p>
+      </section>
+
+      <!-- In-game HUD -->
+      <div id="hud" class="hidden">
+        <div class="hud-bar">
+          <div class="hud-box">
+            <div><span class="hud-score-label"></span>: <b id="hud-score">0</b><span class="hud-mult" id="hud-mult"></span></div>
+            <div><span id="hud-stat-label"></span>: <b id="hud-stat">0</b></div>
+          </div>
+          <div class="hud-time" id="hud-time">45</div>
+          <div class="hud-box right">
+            <div>LEVEL <b id="hud-level">1</b></div>
+            <div class="level-bars"></div>
+          </div>
+        </div>
+        <div class="time-track"><div class="time-fill" id="hud-time-fill"></div></div>
+        <div class="lost-warning"></div>
+        <div class="times-up"></div>
+      </div>
+
+      <!-- 4. Result -->
+      <section id="screen-result" class="screen">
+        <p class="result-label"></p>
+        <p class="result-score" id="result-score">0</p>
+        <p class="result-line" id="result-line"></p>
+        <div class="result-win">
+          <h2 class="result-heading win-heading"></h2>
+          <div class="prize">
+            <div class="rays"></div>
+            <img id="prize-img" alt="" />
+          </div>
+          <p class="prize-name" id="prize-name"></p>
+          <div class="prize-code hidden">
+            <div class="qr"></div>
+            <div>
+              <p class="code"></p>
+              <p class="code-hint"></p>
+            </div>
+          </div>
+        </div>
+        <div class="result-lose">
+          <h2 class="result-heading lose-heading"></h2>
+          <img class="mascot" alt="" />
+          <p class="lose-hint" id="lose-hint"></p>
+          <p class="claim"></p>
+        </div>
+        <button type="button" id="photo-offer" class="hidden"></button>
+        <div class="return-track"><div class="return-fill"></div></div>
+      </section>
+
+      <div id="camera-holder" class="hidden"></div>
+      <div id="camera-error" class="hidden"></div>
+      <div id="boot-error" class="hidden"></div>
+      <div id="tap-start" class="hidden">
+        <img class="logo" alt="" />
+        <button type="button">TAP TO PLAY</button>
+        <p>The games use your front camera. Nothing is recorded or sent anywhere.</p>
+      </div>
+      <div id="test-badge" class="hidden"></div>
+      <div id="admin-hotspot"></div>
+      <div id="admin-root" class="hidden"></div>
+      <pre id="debug" class="hidden"></pre>
+    </div>
+  </body>
+</html>

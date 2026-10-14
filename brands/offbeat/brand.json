@@ -1,0 +1,36 @@
+{
+  "name": "Offbeat Games",
+  "lang": "en",
+  "dir": "ltr",
+  "logo": "art/logo.svg",
+  "colors": {
+    "primary": "#ff2e88",
+    "primaryDeep": "#5c0a33",
+    "glow": "rgba(255, 46, 136, 0.7)",
+    "background": "#0b0720",
+    "backgroundAlt": "#2a0f4f",
+    "text": "#ffffff",
+    "onPrimary": "#ffffff",
+    "good": "#3dffb0",
+    "bad": "#ff5a36"
+  },
+  "fonts": {
+    "display": "'Bungee', 'Arial Black', sans-serif",
+    "hud": "'Bungee', 'Arial Black', sans-serif",
+    "ui": "'Fredoka', 'Segoe UI', sans-serif"
+  },
+  "fontFiles": [
+    { "family": "Bungee", "file": "fonts/bungee-latin-400-normal.woff2" },
+    { "family": "Fredoka", "file": "fonts/fredoka-latin-600-normal.woff2", "weight": "600" }
+  ],
+  "text": {
+    "attract.footer": "PLAY · SCORE · WIN"
+  },
+  "giveaways": [
+    { "id": "small", "name": "Sticker Pack", "image": "art/prize-sticker.svg", "quantity": 500, "minScore": {} },
+    { "id": "medium", "name": "Cap", "image": "art/prize-cap.svg", "quantity": 200, "minScore": {} },
+    { "id": "large", "name": "T-Shirt", "image": "art/prize-tshirt.svg", "quantity": 100, "minScore": {} },
+    { "id": "grand", "name": "Grand Prize", "image": "art/prize-grand.svg", "quantity": 20, "minScore": {} }
+  ],
+  "games": {}
+}
